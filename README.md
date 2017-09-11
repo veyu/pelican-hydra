@@ -9,4 +9,4 @@ Big kudos to all of authors!
 
 ### Why hydra?
 
-Because I will cut pelican-hydra a little and probably something new emerges.
+Because I will cut pelican-hyde a little and probably something new emerges.
