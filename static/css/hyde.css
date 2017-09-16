@@ -270,9 +270,9 @@ a.sidebar-nav-item.active:focus {
 
 /* hydra */
 .theme-base-hydra .sidebar {
-  background-color: #092134;
+  background-color: #1995B8;
 }
 .theme-base-hydra .content a,
 .theme-base-hydra .related-posts li a:hover {
-  color: #092134;
+  color: #345D7B;
 }
