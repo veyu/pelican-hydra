@@ -11,7 +11,16 @@
 {% block content %}
 <div class="post">
     <h1 class="post-title">{{ article.title }}</h1>
-    <span class="post-date">{{ article.locale_date }}</span>
+    <div class="post-meta">
+        <span class="post-date">{{ article.locale_date }}</span>
+        <span class="post-tags">[
+        {% for tag in article.tags|sort %}
+            <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
+            {%- if not loop.last %},{% endif -%}
+        {% endfor %}
+        ]
+        </span>
+    </div>
     {{ article.content }}
     {% include 'fragments/disqus.html' %}
 </div>
