@@ -1,0 +1,120 @@
+/*
+ * Made by veyu.
+ * Under MIT license.
+ * https://github.com/veyu/pelican-hydra
+ */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  color: #515151;
+}
+h1 {
+  font-weight: bold;
+  margin-bottom: 1rem 0 0.5rem 0;
+  font-size: 2rem;
+  color: #345D7B;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+}
+
+.sidebar-main, .sidebar, .sidebar-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar a h1, a, .sidebar a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.sidebar-item-menu {
+  color: #a8c3c4;
+}
+
+.sidebar-item-icon {
+  color: #a8c3c4;
+  font-size: 2rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-content: stretch;
+  margin-top: 3rem;
+  margin-left: 3rem;
+  margin-right: 2rem;
+}
+
+@media (min-width: 40em) {
+    .container {
+      flex-direction: row;
+      flex-grow: 1;
+    }
+    .sidebar-main {
+      width: 18rem;
+      min-width: 18rem;
+    }
+    .sidebar-wrapper {
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    .sidebar {
+      width: 18rem;
+      height: 100vh;
+    }
+}
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 3rem 0;
+  color: #A8C3C4;
+  max-width: 50rem;
+}
+.pagetitle {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  }
+
+.post {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  max-width: 50rem;
+}
+.post-meta {
+  margin-bottom: 1.5rem;
+}
+.post-title {
+}
+.post-date {
+  color: #9a9a9a;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.post-tags {
+  font-size: 0.9rem;
+  margin-top: -0.3rem;
+}
+
+/* hydra theme colors*/
+.theme-base-hydra .sidebar, .sidebar-main{
+  background-color: #1995B8;
+}
+.theme-base-hydra .content a,
+.theme-base-hydra .related-posts li a:hover {
+  color: #345D7B;
+}
+
