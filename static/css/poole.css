@@ -35,12 +35,6 @@
  * Update the foundational and global aspects of the page.
  */
 
-* {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 html,
 body {
   margin: 0;
@@ -51,11 +45,6 @@ html {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-}
-@media (min-width: 38em) {
-  html {
-    font-size: 20px;
-  }
 }
 
 body {
@@ -276,21 +265,6 @@ tbody tr:nth-child(odd) th {
   padding: 1rem;
   color: #717171;
   background-color: #f9f9f9;
-}
-
-
-/*
- * Container
- *
- * Center the page content.
- */
-
-.container {
-  max-width: 38rem;
-  padding-left:  1rem;
-  padding-right: 1rem;
-  margin-left:  auto;
-  margin-right: auto;
 }
 
 
