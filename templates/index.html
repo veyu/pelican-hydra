@@ -9,7 +9,7 @@
                 </h1>
                 <span class="post-date">{{ article.locale_date }}</span>
                 <p>
-                    {{ article.summary }}
+                    {{ article.summary|striptags }}
                 </p>
             </div>
         {% endfor %}
